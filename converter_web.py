@@ -25,9 +25,8 @@ st.caption("ダム・土木分野対応版")
 
 # 単位一覧を表示
 st.subheader("単位一覧")
-cols = st.columns(2)
 for i, unit in enumerate(UNIT_LIST):
-    cols[i % 2].write(f"{i+1}. {unit}")
+    st.write(f"{i+1}. {unit}")
 
 st.divider()
 
